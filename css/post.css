@@ -63,3 +63,8 @@ code {
 h1 {
   margin-left: 0px;
 }
+.fig {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
