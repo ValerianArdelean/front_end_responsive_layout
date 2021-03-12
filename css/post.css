@@ -1,0 +1,65 @@
+html {
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 5%;
+}
+#blog_title {
+  margin-left: 0px;
+  margin-top: 25px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+#placeholder {
+  border-radius: 60px;
+  background-color: grey;
+  width: 80px;
+  height: 80px;
+  color: white;
+}
+#author {
+  display: flex;
+}
+#author_text {
+  margin-top: 30px;
+  margin-left: 10px;
+  padding: 0;
+}
+#author_name {
+  color: #2596be;
+  margin-bottom: 5px;
+}
+#author_description {
+  margin-top: 7px;
+}
+#line_text {
+  border-left: medium solid #000000;
+  padding: 10px;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#css_code {
+  width: 70%;
+  background-color: rgba(100,100,100,0.1);
+  border-left: 3px solid rgb(0,170,200);
+  padding: 20px;
+}
+ul {
+  list-style: circle;
+}
+img {
+  width: 99%;
+}
+a {
+  margin-left: 0px;
+}
+code {
+  background-color: rgba(100,100,100,0.1);
+  padding: 2px;
+}
+h1 {
+  margin-left: 0px;
+}

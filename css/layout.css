@@ -1,0 +1,71 @@
+@import "style.css";
+body {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "header"
+                      "main"
+                      "footer";
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "aside"
+                      "section";
+}
+#posts {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer {
+  grid-area: footer;
+}
+aside {
+  grid-area: aside;
+}
+@media(min-width:800px) {
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "aside section"
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media(min-width:950px) {
+  #posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap:11%;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  #buttons {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  article {
+    padding: 4%;
+  }
+}
